@@ -23,6 +23,8 @@
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
+#else
+#include "../include/config.h"
 #endif
 
 #include <locale.h>
