@@ -56,8 +56,9 @@ int main(int argc, char *argv[])
 		default:	printf("invalid second arg\n");									break;
 	}
 
+
 	for (i=0; i<(n_argc); i++){
 			free(n_argv[i]);
-		}
+	}
 	return 0;
 }
