@@ -50,6 +50,11 @@ build/
 [Bb]in/
 [Oo]bj/
 
+
+iMX5/
+MX51/
+
+
 # MSTest test Results
 [Tt]est[Rr]esult*/
 [Bb]uild[Ll]og.*
