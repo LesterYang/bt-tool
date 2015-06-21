@@ -5,7 +5,7 @@
  *      Author: lester
  */
 #include "lib/bluez-api.h"
-#include <qsiFunc.h>
+#include <lstFunc.h>
 
 int main(int argc, char *argv[])
 {
@@ -29,11 +29,11 @@ int main(int argc, char *argv[])
 	}
 
 
-	n_argv=(char **)qsi_malloc((n_argc)*sizeof(char*));
+	n_argv=(char **)lst_malloc((n_argc)*sizeof(char*));
 
 	for (i=0; i<(n_argc); i++){
 		len = strlen(argv[i+1]);
-		n_argv[i]=(char *)qsi_malloc((len+1)*sizeof(char));
+		n_argv[i]=(char *)lst_malloc((len+1)*sizeof(char));
 		memcpy(n_argv[i], argv[i+1], len);
 		n_argv[i][len]=0x0;
 		//printf("%d: %s\n",i,n_argv[i]);
